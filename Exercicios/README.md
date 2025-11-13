@@ -1,10 +1,8 @@
 # SSOF
 
-Here's the problem description formatted for a README.md file.
+## Taint Analysis Tool: Patterns and Flow Labels
 
-Taint Analysis Tool: Patterns and Flow Labels
-
-Project Overview
+### Project Overview
 
 This project involves developing a tool for detecting security vulnerabilities by tracking potentially dangerous information flows. The goal is to trace untrusted information from sources (e.g., user input) to sensitive sinks (e.g., database queries) and analyze whether these flows are neutralized by sanitizers.
 
