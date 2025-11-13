@@ -22,9 +22,9 @@ Develop a class Pattern that represents a single vulnerability pattern.
 
 It should include at least the following basic operations: 
 
-  (a) A constructor that receives a vulnerability name, a list of source names, a list of sanitizer names, and a list of sink names. 
-  (b) Selectors (getters) for each of its components. 
-  (c) Tests for checking whether a given name is a source, sanitizer, or sink for the pattern.
+    (a) A constructor that receives a vulnerability name, a list of source names, a list of sanitizer names, and a list of sink names. 
+    (b) Selectors (getters) for each of its components. 
+    (c) Tests for checking whether a given name is a source, sanitizer, or sink for the pattern.
 
 2. Label Class
 
@@ -36,10 +36,10 @@ Develop a class Label that represents the integrity of information carried by a 
 
 It should include at least the following basic operations: 
   
-  (a) A well-designed internal structure. (Note: A resource might be influenced by the same source in different ways. Is your label structure refined enough to distinguish these cases?) 
-  (b) Constructors and operations for adding sources and applying sanitizers to the label. 
-  (c) Selectors for each of its components. 
-  (d) A combinor method that returns a new Label representing the combined integrity of two pieces of information.
+    (a) A well-designed internal structure. (Note: A resource might be influenced by the same source in different ways. Is your label structure refined enough to distinguish these cases?) 
+    (b) Constructors and operations for adding sources and applying sanitizers to the label. 
+    (c) Selectors for each of its components. 
+    (d) A combinor method that returns a new Label representing the combined integrity of two pieces of information.
 
     Note: Labels must be mutable. When combining, the new label should be independent of the original ones (i.e., a deep copy).
 
