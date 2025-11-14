@@ -27,19 +27,13 @@ class Pattern():
 
     def is_sink(self, sink):
         return sink in self.sinks
-
-
-    def __str__(self):
-        return (f"Pattern[{self.name}]: "
+    
+    def __repr__(self):
+                return (f"Pattern[{self.name}]: "
                 f"{len(self.sources)} sources, "
                 f"{len(self.sanitizers)} sanitizers, "
                 f"{len(self.sinks)} sinks")
-    
-    def __repr__(self):
-        return (f"Pattern(name='{self.name}', "
-                f"sources={self.sources}, "
-                f"sanitizers={self.sanitizers}, "
-                f"sinks={self.sinks})")
+
 
 if __name__ == "__main__":
 
