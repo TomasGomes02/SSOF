@@ -50,3 +50,33 @@ Develop a class MultiLabel that generalizes the Label class to track multiple vu
     Include corresponding constructors, selectors, and a combinor.
 
     Important: When a source or sanitizer is added, it should only affect the labels for patterns where that name is relevant (e.l., a SQL sanitizer should only affect the SQL Injection label, not the XSS label).
+
+
+4. Policy Classe
+   
+Develop a class Policy, representing an information flow policy, that uses a pattern database for recognizing illegal information flows.
+
+Requirements:
+
+    (a) Constructor of a Policy object, receiving as input the patterns to be considered.
+    (b) Selectors for returning the vulnerability names that have a given name as a source, those that have a given name as a sanitizer, and those that have a given name as a sink.
+    (c) Operation that, given a name and a multilabel that describes the information that is flowing to a certain name, determines the corresponding illegal flows, i.e., which part of the multilabel has the given name as a sink. It should return a multilabel that is like the one received as parameter, but that only assigns labels to patterns for which an illegal flow is taking place.
+
+5. MultiLabelling Class
+   
+Develop a class MultiLabelling, that represents a mapping from variable names to multilabels.
+
+Requirements:
+
+    (a) Constructor of a MultiLabelling object, that enables mapping variable names to multilabels.
+    (b) Selectors for returning the multilabel that is assigned to a given name.
+    (c) Mutator for updating the multilabel that is assigned to a name.
+
+6. Vulnerabilities Class
+   
+Develop a class Vulnerabilities, that is used to collect all the illegal flows that are discovered during the analysis of the program slice.
+
+Requirements:
+
+    (a) Constructor of a Vulnerabilities object, that enables collecting all relevant info on the illegal flows that are found, organized according to vulnerability names.
+    (b) Operation that given a multilabel and a name, which represents detected illegal flows – the multilabel contains the sources and the sanitizers for the patterns for which the name is a sink and the flows are illegal – saves them in a format that enables reporting vulnerabilities at the end of the analysis.
