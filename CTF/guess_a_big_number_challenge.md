@@ -1,11 +1,12 @@
-# Guess a Big Number writeup
+# Challenge Guess a Big Number writeup
 
-## Vulnerability: Information disclosure via directional feedback
+- Vulnerability: Information disclosure via directional feedback
+- Where: /number/{guess} endpoint
+- Impact: Allows efficient determination of secret number using binary search instead of brute-force enumeration
 
-### Where: /number/{guess} endpoint
-### Impact: Allows efficient determination of secret number using binary search instead of brute-force enumeration
 NOTE: Server provides clear "Higher"/"Lower" hints that enable algorithmic solving
-### Steps to reproduce:
+
+## Steps to reproduce:
 
     1. Initialize requests session with server
     2. Set binary search bounds: low=1, high=100000
@@ -16,3 +17,4 @@ NOTE: Server provides clear "Higher"/"Lower" hints that enable algorithmic solvi
     7. If response contains "Higher": set low = guess + 1
     8. If response contains "Lower": set high = guess - 1
     9. Continue until response contains "SSof" (flag)
+
