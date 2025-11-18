@@ -6,7 +6,7 @@
 
 - Impact: Allows unlimited manipulation of counter value via protocol commands
 
-NOTE: Service provides direct current value feedback in clear text
+- NOTE: Service provides direct current value feedback in clear text
 
 ## Steps to reproduce
 

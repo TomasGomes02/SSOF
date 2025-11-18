@@ -6,7 +6,7 @@
 
 - Impact: Privilege escalation by forging unprotected authorization cookie
 
-NOTE: Server uses base64-encoded username without integrity verification
+- NOTE: Server uses base64-encoded username without integrity verification
 
 ## Steps to reproduce
 

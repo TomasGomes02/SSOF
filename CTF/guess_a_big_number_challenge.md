@@ -1,10 +1,12 @@
 # Challenge Guess a Big Number writeup
 
 - Vulnerability: Information disclosure via directional feedback
+
 - Where: /number/{guess} endpoint
+
 - Impact: Allows efficient determination of secret number using binary search instead of brute-force enumeration
 
-NOTE: Server provides clear "Higher"/"Lower" hints that enable algorithmic solving
+- NOTE: Server provides clear "Higher"/"Lower" hints that enable algorithmic solving
 
 ## Steps to reproduce:
 
