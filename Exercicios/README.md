@@ -52,7 +52,7 @@ Develop a class MultiLabel that generalizes the Label class to track multiple vu
     Important: When a source or sanitizer is added, it should only affect the labels for patterns where that name is relevant (e.l., a SQL sanitizer should only affect the SQL Injection label, not the XSS label).
 
 
-4. Policy Classe
+4. Policy Class
    
 Develop a class Policy, representing an information flow policy, that uses a pattern database for recognizing illegal information flows.
 
