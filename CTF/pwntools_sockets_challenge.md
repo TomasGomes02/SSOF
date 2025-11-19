@@ -1,6 +1,6 @@
 # Challenge `PwnTools Sockets` writeup
 
-- Vulnerability: Business logic flaw in stateful TCP service
+- Vulnerability: Stateful TCP service
 
 - Where: Port 25055 TCP service
 
@@ -20,3 +20,4 @@
 8. Continue loop until CURRENT matches TARGET
 9. Send "FINISH" command to finalize
 10. Receive flag from final server response
+
