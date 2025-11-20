@@ -1,6 +1,6 @@
 # Challenge `Python requests` writeup
 
-- Vulnerability: Endpoint is vulnerable to brute-force attack
+- Vulnerability: No restriction on repeated state manipulation
   
 - Where: `/more` endpoint
   
