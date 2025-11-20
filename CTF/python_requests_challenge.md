@@ -1,6 +1,6 @@
 # Challenge `Python requests` writeup
 
-- Vulnerability: Business logic flaw with unlimited state manipulation
+- Vulnerability: Endpoint is vulnerable to brute-force attack
   
 - Where: `/more` endpoint
   
